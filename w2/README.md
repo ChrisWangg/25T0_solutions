@@ -105,4 +105,5 @@ make
 To test a specific suite run `make` to build, and then run that test, for e.g. `./testName`, instructions given above to test each individual question with my provided tests.
 
 ### Testing all at once
-You can run `./testAll`, which will `make` and test, `twoSum`, `setProblems`, `testQueue`, `testBst`, all at once.
+You can run `./testAll`, which will `make` and test, `twoSum`, `setProblems`, `testQueue`, `testBst`, all at once. Does not test `palindrome`, I
+have not wriiten a test suite for this, manually test this, as shown above.
