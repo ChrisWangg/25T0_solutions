@@ -82,7 +82,7 @@ static void test_numOddOccurances(void) {
 
     // Test 5: Empty array
     {
-        int arr[] = {};
+        int arr[1] = {0};
         int size = 0;
         run_test(
             "Empty array",
@@ -137,7 +137,7 @@ static void test_numSingleOccurrences(void) {
 
     // Test 4: Empty array
     {
-        int arr[] = {};
+        int arr[1] = {0};
         int size = 0;
         run_test(
             "Empty array",

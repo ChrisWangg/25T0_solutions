@@ -87,17 +87,19 @@ static void test_bstCountInternal(void) {
 
     // CURRENTLY DUMMY, returns -1 by default
     int result = bstCountInternal(root);
-
-    // Let's guess what the internal count should be:
-    //   Insert order: 4,6,5,2,1,3,7
-    //   Structure (roughly):
-    //           4
-    //         /   \
-    //        2     6
-    //       / \   / \
-    //      1   3 5   7
-    //            
-    //   Internal nodes are: 4,2,6 => 3 total
+    /*
+        Let's guess what the internal count should be:
+        Insert order: 4,6,5,2,1,3,7
+        Structure (roughly):
+                4
+              /   \
+             2     6
+            / \   / \
+           1   3 5   7
+                
+        Internal nodes are: 4,2,6 => 3 total
+    */
+    
     run_test("Count of internal nodes => 3 (currently dummy = -1)", result == 3);
 
     bstFree(root);
